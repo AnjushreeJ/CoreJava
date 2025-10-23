@@ -1,25 +1,27 @@
 package Constructors;
-//demo for constructor 
 
-public class Conexample {
-	Conexample(int i){
-		System.out.println("constructor with 1 parameter");
-	}
+import java.util.Scanner;
+
+public class Constructordemo {
 	
-	Conexample(int i,int j){
-		System.out.println("constructor with 2 parameter");
-	}
-	Conexample(int i, String g , float f){
-		System.out.println("constructor with 3 parameter");
-	}
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		//Conexample c=new Conexample(9,"gfhg");
-		@SuppressWarnings("unused")
-		Conexample c1=new Conexample(7,9);
-		@SuppressWarnings("unused")
-		Conexample c2=new Conexample(5);
-		@SuppressWarnings("unused")
-		Conexample c3=new Conexample(7,"rash",9.7f);
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter the name");
+		String name=sc.next();
+		System.out.println("enter the address");
+		String address=sc.next();
+		
+		System.out.println("enter the id");
+		int cid=sc.nextInt();
+		
+		Customer c=new Customer();
+		c.setCustomnername(name);
+		c.setCustomeradress(address);
+		c.setCustomerid(cid);
+		
+		System.out.println(c);
 		
 	}
 
