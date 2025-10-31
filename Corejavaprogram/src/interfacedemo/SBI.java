@@ -1,0 +1,11 @@
+package interfacedemo;
+
+public class SBI implements Bank {
+
+	@Override
+	public float rateofinterest() {
+		
+		return 7.9f;
+	}
+
+}
